@@ -1,0 +1,81 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>zc.zhang.spring</groupId>
+	<artifactId>Spring_03_jdbc</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+		<cn.zhang.spring.version>4.3.8.RELEASE</cn.zhang.spring.version>
+		<cn.zhang.junit.version>4.12</cn.zhang.junit.version>
+		<cn.zhang.log4j.version>1.2.17</cn.zhang.log4j.version>
+		<cn.zhang.druid.version>1.0.29</cn.zhang.druid.version>
+		<cn.zhang.mysqlconnector.version>5.1.6</cn.zhang.mysqlconnector.version>
+	</properties>
+	<dependencies>
+		<!-- 配置Spring的Jar包 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${cn.zhang.spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${cn.zhang.spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${cn.zhang.spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-expression</artifactId>
+			<version>${cn.zhang.spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${cn.zhang.spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>${cn.zhang.spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+			<version>${cn.zhang.spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>aopalliance</groupId>
+			<artifactId>aopalliance</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<!-- 配置一个简单的log4j以及测试使用的junit的jar -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${cn.zhang.junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${cn.zhang.log4j.version}</version>
+		</dependency>
+		<!-- 配置AliBaBa提供的数据源 -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>${cn.zhang.druid.version}</version>
+		</dependency>
+		<!-- 配置数据库驱动包 -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${cn.zhang.mysqlconnector.version}</version>
+		</dependency>
+	</dependencies>
+</project>
